@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Brazucore | Sign in</title>
+</head>
+<body>
+    <header class="header_container">
+        <nav class="menu_container">
+            <ul class="menu_lista">
+                <li class="menu_item"><a href="index.html">Home</a></li>
+                <li class="menu_item"><a href="index.html#destino">Destinos</a></li>
+                <li class="menu_item"><a href="login.html">Log-in</a></li>
+                <li class="menu_item"><a href="signin.html">Sign-in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login_container">
+        <h1 class="login_tittle">Crie uma conta</h1>
+        <form>
+            <label for="nome" class="login_label">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <label for="email" class="login_label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu melhor email" required>
+            <label for="senha" class="login_label">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            <label for="senha" class="login_label">Confirmar senha</label>
+            <input type="password" id="senha" name="senha" placeholder="As senhas devem ser iguais" required>
+            <label for="access" class="login_label" id="login_label">Manter acesso</label>
+            <input type="checkbox" name="ascess" id="acess">
+            <!-- <button type="submit" class="login_btn">Entrar</button> -->
+            <a href="login.html" class="login_btn">Criar conta</a>
+        </form>
+        <div class="links">
+            <a href="login.html" class="login_utility-link">Já tenho uma conta</a>
+        </div>
+    </div>
+</body>
+</html>

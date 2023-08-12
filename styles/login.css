@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../assets/images/selva-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login_container {
+    background-color: #fff;
+    border-radius: 25px;
+    min-width: 300px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px #00000033;
+    width: 25%;
+}
+
+.login_tittle {
+    margin-bottom: 20px;
+    font: bold 1em var(--fontDisplay);
+    text-align: center;
+}
+
+.login_label {
+    font: 500 1em var(--fontText);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    outline: none;
+}
+
+.login_btn {
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px #0000006e;
+    background-color: var(--green);
+    padding: 5px 15px;
+    color: var(--white);
+    font: bold .8em var(--fontDisplay);;
+    text-decoration: none;
+    border: none;
+}
+
+.login_btn:hover {
+    border-radius: 0;
+    background-color: transparent;
+    border-top: 2px solid var(--darkGreen);
+    border-bottom: 2px solid var(--darkGreen);
+    box-shadow: none;
+    color: var(--black);
+    transition: .1s ease-in-out;
+}
+
+#acess, #login_label {
+    display: inline;
+}
+
+.links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login_utility-link {
+    font-family: var(--fontText);
+    text-decoration: none;
+    color: var(--darkGreen);
+    margin-right: 20px;
+}
+
+.login_utility-link:hover {
+    border-bottom: 2px solid var(--darkGreen);
+}
+
+a:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap');
+
+:root {
+    --white: #f1f1f1;
+    --demiBlack: ;
+    --black: #040404;
+    --lightGreen: #39e28e;
+    --green: #0aa062;
+    --darkGreen: #006e40;
+    --fontDisplay: 'Montserrat', sans-serif;;
+    --fontText: "Segoi UI", arial, sans-serif;
+    --lowSpacing: .5em;
+    --spacing: 1.0em;
+    --highSpacing: 2em;
+}
+
+.header_container {
+    background-color: var(--white);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.384);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.menu_lista {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: flex-end;
+}
+
+.menu_item {
+    padding: 0 0 var(--lowSpacing);
+}
+
+.menu_item > a {
+    padding: 2px 6px;
+    text-decoration: none;
+    color: var(--black);
+    font: bold var(--spacing) var(--fontDisplay);
+    transition: color .3s ease-in-out, .3s ease-in-out;
+}
+
+.menu_item :hover {
+    box-shadow: inset 100px 0 0 0 var(--black);
+    color: #f1f1f1;
+}

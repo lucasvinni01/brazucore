@@ -1,0 +1,94 @@
+
+.banner_container {
+    background-image: url("../assets/images/brasil-bg4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 2.3em;
+}
+
+.banner_image {
+    margin: 0 auto;
+    height: calc(100vh - 50px);
+}
+
+.destino_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    background-color: var(--black);
+    padding: 2em;
+}
+
+.destino_item:first-child {
+    display: grid;
+    grid-row: 1 / 3;
+}
+
+.destino_link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.destino_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destino_link:hover .destino_img {
+    transform: scale(1.2);
+}
+
+.destino_link:hover .span_box {
+    background-image: linear-gradient(#00000000, var(--black) 80%)  
+}
+
+.span_box {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    background-image: linear-gradient(#00000000, var(--black));
+    box-sizing: border-box;
+}
+
+.destino_text {
+    font-family: var(--fontDisplay);
+    font-size: 1.2em;
+    text-shadow: 3px 3px 5px #0000008c;
+    color: white;
+    padding: 0 15px 15px;
+}
+
+.destino_text-highlight {
+    font-weight: bold;
+}
+
+@media (max-width: 1120px) {
+    .destino_container {
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .destino_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .destino_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
