@@ -1,0 +1,99 @@
+
+body {
+    background-color: var(--white);
+}
+
+.banner_container {
+    background-image: url("../assets/images/amazonia-shape.png");
+    background-size: cover;
+    width: calc(99vh-100px);
+    height: 120vh;
+    overflow: hidden;
+}
+
+.banner_tittle-container {
+    position: relative;
+    top: 50%;
+    left: 45%;
+}
+
+.banner_uppertext {
+    position: relative;
+    left: 26%;
+    font: bold 2em var(--fontText);
+    color: var(--white);
+}
+
+.banner_tittle {
+    font: bold 8em var(--fontDisplay);
+    color: var(--white);
+    text-shadow: 5px 5px 7px #00000057;
+}
+
+.info_chamada-container {
+    position: relative;
+    z-index: 1;
+    top: -80px;
+}
+
+.info_chamada-tittle {
+    font: bold 3em var(--fontDisplay);
+    padding: 0px 0px 0px 3em;
+}
+
+.info_text-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: calc(2*var(--highSpacing));
+}
+
+.info_text-principal {
+    font: bold 2em var(--fontText);
+    text-align: justify;
+    border-bottom: 2px solid var(--darkGreen);
+    margin-bottom: var(--spacing);
+}
+
+.info_text-general {
+    text-align: justify;
+    font: normal 1.2em var(--fontText);
+    text-indent: var(--highSpacing);
+    margin-bottom: var(--spacing);
+}
+
+.info_text-highlight {
+    background-color: var(--darkGreen);
+    color: var(--white);
+}
+
+@media (max-width: 1200px) {
+    .banner_tittle {
+        font-size: 4em;
+    }
+
+    .banner_uppertext {
+        font-size: 1.5em;
+    }
+
+    .info_chamada-tittle {
+        font-size: 2em;
+    }
+
+    .info_text-principal {
+        font-size: 1.2em;
+    }
+    
+    .info_text-general {
+        font-size: .8;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner_tittle {
+        font-size: 2em;
+    }
+
+    .banner_uppertext {
+        font-size: 1em;
+    }
+}

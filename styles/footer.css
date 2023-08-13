@@ -102,7 +102,7 @@
         text-align: center;
     }
 
-    .footer_container ul, div {
+    .lista_maisinfo, .newsletter_container, .lista_redes {
         border-bottom: 2px solid var(--white);
     }
 
